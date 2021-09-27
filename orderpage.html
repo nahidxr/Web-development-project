@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>OrderPage</title>
+  <style type="text/css">
+
+</style>
+  </head>
+
+<body>
+  <!-- Navigation -->
+  <div class="row bg-success  " style="height:25px">
+     <div class="col-4 d-none d-md-block">
+       <a href="#" class="text-light ml-5" style="font-size: 13px" ><i class="fa fa-browser"></i>Trusted Online Shopping Site in Bangladesh</a>
+     </div>
+     <div class="col-4 d-none d-md-block">
+           <a href="#" class="text-light ml-4" style="font-size: 13px" ><i class="fa fa-phone"></i> 09636102030 (9am to 9pm)</p></a>
+
+     </div>
+
+     <div class="col-4 d-none d-md-block">
+         <a href="#" class="text-light ml-5"style="font-size: 13px" ><i class="fa fa-shopping-basket"></i> How to buy</a>
+         <a href="#"class="text-light ml-5" style="font-size: 13px" ><i class="fa fa-buysellads"></i> sell with us</a>
+     </div>
+
+   </div>
+
+
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 shadow ">
+ <a class="navbar-brand" href="#">
+ <img src="images/index.png" class="d-inline-block align-top text-success" alt="" style="height:65px;width:130px">
+ </a>
+ <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+     <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+   <form class="form-inline ml-5">
+       <div class="input-group">
+           <input type="text" class="form-control" placeholder="Search"style="width: 350px; height: 40px">
+           <div class="input-group-append">
+               <button type="button" class="btn btn-success"><i class="fa fa-search"></i></button>
+           </div>
+       </div>
+   </form>
+     <div class="navbar-nav">
+         <a href="#" class="nav-item nav-link active" style="color:green">Home</a>
+         <a href="#" class="nav-item nav-link"  style="color:green">Order</a>
+           <a class="nav-link " href="#"  style="color:green">item(2)<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+
+     </div>
+
+     <div class="navbar-nav">
+         <a href="#" class="nav-item nav-link " data-toggle="modal" data-target="#loginModal"  style="color:green">Login</a>
+         <!-- Modal -->
+         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="loginLabel">LOGIN</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <form>
+                     <div class="  form-group ">
+                       <label for="loginInputEmail1">Email address</label>
+                       <input type="email" class=" form-control" id="loginInputEmail1" aria-describedby="emailHelp">
+                       <div class="invalid-feedback">
+                         Incorrect Email format
+                     </div>
+                   <div class="valid-feedback">
+                       Correct Email format
+                   </div>
+                     </div>
+                     <div class=" form-group">
+                       <label for="loginInputPassword">Password</label>
+                       <input type="password" class="form-control " id="loginInputPassword">
+                       <div class="invalid-feedback">At least 10 characters,One Capital Letter ,One Small Letter,One Special Character
+                     </div>
+                   <div class="valid-feedback">Valid Password
+                   </div>
+                     </div>
+                   </form>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">  Login</button>
+               </div>
+             </div>
+           </div>
+         </div>
+ <!-- register -->
+         <a href="#" class="nav-item nav-link"id="registerBtn" data-toggle="modal" data-target="#signupModal"  style="color:green">Register</a>
+         <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="signupModalLabel">Registration</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <form>
+                     <div class="  form-group ">
+                       <label for="signupInputEmail">Email address</label>
+                       <input type="email" class=" form-control" id="signupInputEmail" aria-describedby="emailHelp" required>
+                       <div class="invalid-feedback">
+                         Incorrect Email format
+                     </div>
+                   <div class="valid-feedback">
+                       Correct Email format
+                   </div>
+                     </div>
+                     <div class=" form-group">
+                       <label for="signupInputNumber">Mobile Number</label>
+                       <input type="text" class="form-control " id="signupInputNumber" required>
+                       <div class="invalid-feedback">Invalid Mobile number
+                     </div>
+                   <div class="valid-feedback">valid Mobile number
+                   </div>
+                     </div>
+                     <div class=" form-group">
+                       <label for="signupInputPassword">Password</label>
+                       <input type="password" class="form-control " id="signupInputPassword" required>
+                       <div class="invalid-feedback">At least 10 characters,One Capital Letter ,One Small Letter,One Special Character
+                     </div>
+                   <div class="valid-feedback">Valid Password
+                   </div>
+                     </div>
+                     <div class=" form-group">
+                       <label for="signupInputConfirmPassword">Confirm Password</label>
+                       <input type="password" class="form-control " id="signupInputConfirmPassword" required>
+                       <div class="invalid-feedback"> Password is not matched
+                     </div>
+                   <div class="valid-feedback"> Password is matched
+                   </div>
+                     </div>
+                   </form>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Create Account</button>
+               </div>
+             </div>
+           </div>
+         </div>
+     </div>
+ </div>
+ </nav>
+
+  <!-- nave end -->
+
+  <div >
+    <img src="images/admin.png"class="border shadow" alt=""style="height:350px;width:1349px">
+  </div>
+
+
+  <!-- order -->
+  <!-- table -->
+
+  <div class="row ">
+    <div class="col-2 ml-5 mt-5 border shadow d-none d-xl-block">
+
+      <div class="">
+          <h5 class="mt-2 text-success">Product Catagories</h5>
+
+      </div>
+       <a href="#"  class="text-secondary font-weight-bold mt-5 mb-5">Home</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5 mb-5"> New Arrival</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5">Grocery</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5">Honey</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5">Pickles</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5">Fruits</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5">Tonic</a><br>
+       <a href="#"  class="text-secondary font-weight-bold mt-5">Flash Sale</a>
+    </div>
+    <div class="col-md-8 border  shadow mb-1 ml-5 mt-5 shadow" >
+          <h2 class=" text-success mt-2 ml-5">  <img src="images/order1.png"alt="" style="height:50px;width:55px;font-family: Arial, Helvetica, sans-serif">SHOPPING CART INFORMATION</h2>
+    <table class="table border-bottom" >
+      <thead >
+        <tr>
+          <th scope="col" class="text-secondary">Image</th>
+          <th scope="col" class="text-secondary ">Product</th>
+          <th scope="col"class="text-secondary">Price</th>
+          <th scope="col"class="text-secondary ">QTY</th>
+          <th scope="col"class="text-secondary">Remove</th>
+          <th scope="col" class="text-info font-weight-bold">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td><img src="images/PANCH.jpg"  alt="" style="height:140px;width:90px"></td>
+            <td > <p class="mt-5">Panch Phoron Powder - 100 Gram</p> </td>
+            <td><p class="mt-5"></p>150 Taka</td>
+            <td> <input type="text" class="ml-2 mt-5" id="qtyText" onkeypress="return isNumberKey(event)" style="height:30px;width:50px"value=""></td>
+            <td><button type="button" class="btn btn-outline-light mt-5" style=";width:80px" id="#"><img src="images/remove2.png"  alt="" style="height:25px;width:25px"></button></td>
+          <td><p class="mt-5 text-info font-weight-bold">150 Taka</p></td>
+        </tr>
+          <tr>
+            <td><img src="images/boroi.JPG"  alt="" style="height:140px;width:90px"></td>
+            <td > <p class="mt-5">Boroi pickle - 100 Gram</p> </td>
+            <td><p class="mt-5 ">310 Taka</p></td>
+            <td> <input type="text" class="ml-2 mt-5" id="qtyText" onkeypress="return isNumberKey(event)" style="height:30px;width:50px"value=""></td>
+            <td><button type="button" class="btn btn-outline-light mt-5" style=";width:80px" id="#"><img src="images/remove2.png"  alt="" style="height:25px;width:25px"></button></td>
+            <td><p class="mt-5 text-info font-weight-bold">310 Taka</p></td>
+          </tr>
+          </tbody>
+        </table>
+          <div class="row mb-5">
+
+                  <div class="col col-md-4 col-sm">
+              <button type="button" class="btn btn-primary" style="width:170px">Update QTY</button>
+              </div>
+            <div class="colcol-md-4 col-sm" >
+              <button type="button" class="btn btn-danger"  style="width:170px">More Shopping</button>
+            </div>
+            <div class="col col-md-4 shadow col-sm" style="height:60px;width:200px">
+               <div class="row ">
+                <div class="col-md text-secondary mr-4"><p>Grand Total:</p>
+                </div>
+                <div class="col-sm "><p class="text-info font-weight-bold">3200 Taka</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+<!-- billingandshippinginfo -->
+
+      <div style="height:100px">
+        <h2 class="text-center text-info mt-5 ">  <img src="images/n2.png"alt="" style="height:40px;width:45px;font-family: Arial, Helvetica, sans-serif">BILLING & SHIPPING INFORMATION</h2>
+      </div>
+        <div class="row mt-2" >
+          <div class="col-3">
+          </div>
+          <div class=" col-6 border  border-info shadow" style="width:5px">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="inputname">Name</label>
+                    <input type="text" class="form-control" id="inputname" placeholder="Enter your Name">
+                    <div class="invalid-feedback">
+                      Incorrect Name format
+                  </div>
+                <div class="valid-feedback">
+                    Correct Name format
+                </div>
+                  </div>
+                    <div class="form-group col-md-12">
+                      <label for="inputNumber">phone number</label>
+                      <input type="text" class="form-control" id="inputNumber" placeholder="01⨯⨯⨯-⨯⨯⨯⨯⨯⨯">
+                      <div class="invalid-feedback">Invalid Mobile number
+                    </div>
+                  <div class="valid-feedback">
+                    valid Mobile number
+                  </div>
+                    </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputCity">City</label>
+                    <select id="inputCity" class="form-control">
+                      <option selected>Dhaka</option>
+                      <option>Dhaka</option>
+                      <option>Chittagong</option>
+                      <option>Feni</option>
+                      <option>commila</option>
+                      <option>Rangpur</option>
+                      <option>Noraile</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-12 mb-5">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" style="height:100px">
+                    </div>
+                    </div>
+                  </form>
+                  </div>
+          <div class="col-3">
+          </div>
+        </div>
+        <div style="height:100px">
+          <h2 class="text-center text-danger font-weight-bold mt-5">  <img src="images/n3.png"alt="" style="height:48px;width:48px">CONFIRMATION & PAYMENT </h2>
+        </div>
+<!-- payment -->
+        <div class="row mb-5 mt-2 ">
+          <div class="col-3">
+          </div>
+
+          <div class="col-6 border shadow  border-danger"style="height:300px">
+            <!-- paymentdivided -->
+            <div class="row mt-5 ml-5 ">
+              <div class="col-6 col-lg-2">
+                 <img src="images/bkash-pay-with.png"alt="" style="height:15px;width:80px">
+              </div>
+              <div class="col-6 col-lg-10" >
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1"> Pay With bkash  </label>
+                </div>
+              </div>
+              <div class=" col-6 col-lg-2">
+                 <img src="images/sslcommerz-pay-with.png"alt="" style="height:15px;width:80px">
+              </div>
+              <div class="col-6 col-lg-10" >
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1"> Pay With Card  </label>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2">
+                 <img src="images/cash-on-delivery.png"alt="" style="height:17px;width:80px">
+              </div>
+              <div class="col-6 col-lg-10" >
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">  Cash On Delivery   </label>
+                </div>
+              </div>
+              <div class="col  mt-5  ">
+                <button type="button" class="btn btn-danger ml-5" style="width:100px" data-toggle="modal" data-target="#orderloginModal" >CONFIRM</button>
+                <!-- Modal -->
+                <div class="modal fade" id="orderloginModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content"style="height:400px;width:700px">
+                      <div class="modal-body" >
+                        <div class="">
+                          <h5 class="text-secondary font-weight-bold">WELCOME! Please Login to continue.<br></h5>
+                          <p class="text-primary">new member ?   <a href="#" data-toggle="modal" data-target="#signupModal"class="text-primary" data-dismiss="modal">Register</a></p>
+                          <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="signupModalLabel">Registration</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                      <div class="  form-group ">
+                                        <label for="signupInputEmail">Email address</label>
+                                        <input type="email" class=" form-control" id="signupInputEmail" aria-describedby="emailHelp">
+                                        <div class="invalid-feedback">
+                                          Incorrect Email format
+                                      </div>
+                                    <div class="valid-feedback">
+                                        Correct Email format
+                                    </div>
+                                      </div>
+                                      <div class=" form-group">
+                                        <label for="signupInputNumber">Mobile Number</label>
+                                        <input type="text" class="form-control " id="signupInputNumber">
+                                        <div class="invalid-feedback">Invalid Mobile number
+
+                                      </div>
+                                    <div class="valid-feedback">valid Mobile number
+                                    </div>
+
+                                      </div>
+                                      <div class=" form-group">
+                                        <label for="signupInputPassword">Password</label>
+                                        <input type="password" class="form-control " id="signupInputPassword">
+                                        <div class="invalid-feedback">At least 10 characters,One Capital Letter ,One Small Letter,One Special Character
+
+                                      </div>
+                                    <div class="valid-feedback">Valid Password
+                                    </div>
+                                      </div>
+                                      <div class=" form-group">
+                                        <label for="signupInputConfirmPassword">Confirm Password</label>
+                                        <input type="password" class="form-control " id="signupInputConfirmPassword">
+                                        <div class="invalid-feedback"> Password is not matched
+
+                                      </div>
+                                    <div class="valid-feedback"> Password is matched
+                                    </div>
+                                      </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Create Account</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <form>
+                                <div class="  form-group ">
+                                  <label for="loginInputEmail1">Email address</label>
+                                  <input type="email" class=" form-control" id="loginInputEmail1" aria-describedby="emailHelp" style="width:350px">
+                                  <div class="invalid-feedback">
+                                    Incorrect Email format
+                                </div>
+                              <div class="valid-feedback">
+                                  Correct Email format
+                              </div>
+                                </div>
+                                <div class=" form-group">
+                                  <label for="loginInputPassword">Password</label>
+                                  <input type="password" class="form-control " id="loginInputPassword" style="width:350px">
+                                  <div class="invalid-feedback">At least 10 characters,One Capital Letter ,One Small Letter,One Special Character
+                                </div>
+                              <div class="valid-feedback">Valid Password
+                              </div>
+                                </div>
+                              </form>
+                          </div>
+                          <div class="col-6">
+                            <div class="row">
+                              <div class="col-12">
+                                <button type="button" class="btn btn-warning ml-5 mt-3 text-light" style="width:250px;background-color:#FB8705 " data-toggle="modal" data-target="#orderloginModal" >LOGIN</button>
+                              </div>
+                              <div class="col-12">
+                                <button type="button" class="btn btn-primary ml-5 mt-2 " style="width:250px" data-toggle="modal" data-target="#orderloginModal" ><img src="images/fb3.png" class="bg-light mr-2" alt="" style="height:23px;width:23px">FACEBOOK</button>
+                              </div>
+                              <div class="col-12">
+                                <button type="button" class="btn btn-danger ml-5 mt-2 " style="width:250px" data-toggle="modal" data-target="#orderloginModal" ><img src="images/g1.png"  class="mr-2" alt="" style="height:23px;width:23px">GOOGLE</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+          </div>
+
+        </div>
+
+  <!-- orderend -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+
+           <footer >
+               <div class="row bg-success"  style="height:300px">
+                  <div class="col col-lg-3 col-md-6 mt-4 pl-4 ">
+                      <h6 class="text-light font-weight-bold">INFORMATION</h6>
+                      <a href="#" class="text-light">Home</a><br>
+                      <a href="#" class="text-light">About us</a><br>
+                      <a href="#" class="text-light">Service</a><br>
+                      <a href="#" class="text-light">Reviews</a>
+                  </div>
+
+                <div class="col col-lg-3 col-md-6 mt-4 ">
+                    <h6 class="text-light font-weight-bold">CUSTOMER SERVICE</h6>
+                    <a href="#" class="text-light">Security Policy</a><br>
+                    <a href="#" class="text-light">Shipping & Replacement</a><br>
+                    <a href="#" class="text-light">Privacy Policy</a><br>
+                    <a href="#" class="text-light">Terms of Use</a>
+              </div>
+
+              <div class="col col-lg-3 col-md-6 mt-4 ">
+                  <h6 class="text-light font-weight-bold">MY ACCOUNT</h6>
+                    <a href="#" class="text-light">Addresses</a> <br>
+                      <a href="#" class="text-light">Orders</a> <br>
+                      <a href="#" class="text-light">Shopping cart</a><br>
+                    <a href="#" class="text-light">Wishlist</a><br>
+                  <a href="#" class="text-light">Compare products list</a>
+                </div>
+
+                <div class="col col-lg-3 col-md-6 mt-4">
+                  <h6 class="text-light font-weight-bold">CONTACT US</h6>
+                    <a href="#" class="text-light"><i class="fa fa-map-marker-alt"aria-hidden="true"></i>39, North Road, Vuter Goli, Near Jame Masjid, Dhanmondi, Dhaka 1205</a>
+                    <a href="#" class="text-light">support@goshop.com</a><br>
+                    <a href="#" class="text-light">098754889</a><br>
+                    </div>
+                 </div>
+
+
+            <div class="row   bg-lght" style="width:1394px;background-color:#1E8449 ">
+              <div class="col" >
+
+                 <p class="text-center text-light "><small >©2020 MIT License, All rights reserved.</p></small>
+               </div>
+                  </div>
+         </footer>
+
+
+
+      <script type="text/javascript">
+      function isNumberKey(evt)
+            {
+              var charCode = (evt.which) ? evt.which : evt.keyCode;
+              if (charCode != 46 && charCode > 31
+              && (charCode < 48 || charCode > 57))
+              return false;
+              return true;
+            }
+
+         </script>
+
+         <script type="text/javascript">
+              var uNumber=document.getElementById('inputNumber');
+                uNumber.addEventListener('keyup', numbervalidate);
+
+               function numbervalidate(){
+                    var uNumberValue=uNumber.value;
+                    var validNumformat=/^(01[56789])(\d{8})$/;
+
+                 if(validNumformat.test(uNumberValue)){
+                    uNumber.classList.add('is-valid');
+                      uNumber.classList.remove('is-invalid');
+                   }
+                   else{
+                      uNumber.classList.add('is-invalid');
+                      uNumber.classList.remove('is-valid');
+                   }
+               }
+              </script>
+
+              <!-- Regsiter email -->
+                     <script type="text/javascript">
+                          var regEmail=document.getElementById('signupInputEmail');
+                           regEmail.addEventListener('keyup', mailvalidate);
+
+                           function mailvalidate(){
+                		            var regEmailValue=regEmail.value;
+                                var validformat=/^([a-zA-Z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z.]{2,6})$/;
+
+
+
+                             if(validformat.test(regEmailValue)){
+                                  regEmail.classList.add('is-valid');
+                                  regEmail.classList.remove('is-invalid');
+                               }
+                               else{
+                                  regEmail.classList.add('is-invalid');
+                                  regEmail.classList.remove('is-valid');
+                               }
+
+                           }
+                        </script>
+
+              <!-- number -->
+                        <script type="text/javascript">
+                             var regNumber=document.getElementById('signupInputNumber');
+                                regNumber.addEventListener('keyup', numbervalidate);
+
+                              function numbervalidate(){
+                   		            var regNumberValue=regNumber.value;
+                                   var validNumformat=/^(01[56789])(\d{8})$/;
+
+
+
+                                if(validNumformat.test(regNumberValue)){
+                                     regNumber.classList.add('is-valid');
+                                      regNumber.classList.remove('is-invalid');
+                                  }
+                                  else{
+                                     regNumber.classList.add('is-invalid');
+                                     regNumber.classList.remove('is-valid');
+                                  }
+                              }
+                             </script>
+
+                             <!-- password -->
+                          <script>
+                            var passelm=document.getElementById('signupInputPassword');
+                            passelm.addEventListener('keyup',passvalidate);
+                            function passvalidate(){
+                            var plength=/^.{10,}$/;///length checking
+                            var pcap=/[A-Z]+/;///capital checking
+                            var psmall=/[a-z]+/;///lowercase checking
+                            var pspecial=/^.*[^A-Za-z0-9].*$/;///special character checking
+
+                            var passinput=document.getElementById('signupInputPassword').value;
+
+                            if(plength.test(passinput)&&pcap.test(passinput)&&psmall.test(passinput)&&pspecial.test(passinput)){
+                                passelm.classList.add('is-valid');
+                                passelm.classList.remove('is-invalid');
+                            }
+                            else{
+                              passelm.classList.add('is-invalid');
+                              passelm.classList.remove('is-valid');
+                            }
+
+                        }
+                        </script>
+
+                        <!-- signupInputConfirmPassword -->
+
+                      <!-- confirmpass -->
+
+                      <script>
+                            var confirmpass=document.getElementById('signupInputConfirmPassword');
+                            var password=document.getElementById('signupInputPassword')
+                          confirmpass.addEventListener('keyup',passvalidate);
+                            function passvalidate(){
+                              var confirmpassvalue=confirmpass.value;
+                              var passValue=password.value;
+
+
+                              if( confirmpassvalue==passValue){
+                                 confirmpass.classList.add('is-valid');
+                                confirmpass.classList.remove('is-invalid');
+                              }
+                              else{
+                               confirmpass.classList.add('is-invalid');
+                              confirmpass.classList.remove('is-valid');
+                              }
+
+                            }
+                    </script>
+                    <script type="text/javascript">
+                         var uName=document.getElementById('inputname');
+                             uName.addEventListener('keyup',  uNamevalidate);
+
+                          function  uNamevalidate(){
+                              var  uNameValue= uName.value;
+                               var validNumformat=/^[a-zA-Z0-9]{1,15}$/;
+
+
+
+                            if(validNumformat.test(uNameValue)){
+                                  uName.classList.add('is-valid');
+                                 uName.classList.remove('is-invalid');
+                              }
+                              else{
+                                 uName.classList.add('is-invalid');
+                                  uName.classList.remove('is-valid');
+                              }
+                          }
+                         </script>
+
+
+
+
+
+
+      <!--Optional JavaScript-->
+      <!--jQuery first,then Popper.js,then Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      </body>
+</html>

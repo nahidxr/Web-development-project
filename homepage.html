@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>GOshop</title>
+    <style type="text/css">
+
+        .img-jmbo{
+          background-image: url('images/jb5.jpg');
+          background-size: 100%,100%;
+          background-attachment: fixed;
+        }
+
+
+</style>
+  </head>
+
+<body>
+
+       <div class="row bg-success  " style="height:25px">
+          <div class="col-4 d-none d-md-block">
+            <a href="#" class="text-light ml-5" style="font-size: 13px" ><i class="fa fa-browser"></i>Trusted Online Shopping Site in Bangladesh</a>
+            </div>
+            <div class="col-4 d-none d-md-block">
+                <a href="#" class="text-light ml-4" style="font-size: 13px" ><i class="fa fa-phone"> </i> 09636102030 (9am to 9pm)</p></a>
+              </div>
+              <div class="col-4 d-none d-md-block">
+              <a href="#" class="text-light ml-5"style="font-size: 13px" ><i class="fa fa-shopping-basket"></i> How to buy</a>
+              <a href="#"class="text-light ml-5" style="font-size: 13px" ><i class="fa fa-buysellads"></i> sell with us</a>
+          </div>
+        </div>
+
+
+
+  <!-- Navigation -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 shadow">
+                <a class="navbar-brand" href="#">
+                <img src="images/index.png" class="d-inline-block align-top text-success" alt="" style="height:65px;width:130px">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                  <form class="form-inline ml-5">
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search"style="width: 350px; height: 40px">
+                          <div class="input-group-append">
+                              <button type="button" class="btn btn-success"><i class="fa fa-search"></i></button>
+                          </div>
+                      </div>
+                  </form>
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active" style="color:green">Home</a>
+                        <a href="#" class="nav-item nav-link"  style="color:green">Order</a>
+                          <a class="nav-link " href="#"  style="color:green">item(2)<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link " data-toggle="modal" data-target="#loginModal"  style="color:green">Login</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="loginLabel">LOGIN</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                    <div class="  form-group ">
+                                      <label for="loginInputEmail1">Email address</label>
+                                      <input type="email" class=" form-control" id="loginInputEmail1" aria-describedby="emailHelp" required>
+                                      <div class="invalid-feedback">
+                                        Incorrect Email format
+                                    </div>
+                                  <div class="valid-feedback">
+                                      Correct Email format
+                                  </div>
+                                    </div>
+                                    <div class=" form-group">
+                                      <label for="loginInputPassword">Password</label>
+                                      <input type="password" class="form-control " id="loginInputPassword" required>
+                                      <div class="invalid-feedback">At least 10 characters,One Capital Letter ,One Small Letter,One Special Character
+                                    </div>
+                                  <div class="valid-feedback">Valid Password
+                                  </div>
+                                    </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">  Login</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                <!-- register -->
+                        <a href="#" class="nav-item nav-link"id="registerBtn" data-toggle="modal" data-target="#signupModal"  style="color:green">Register</a>
+                        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="signupModalLabel">Registration</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                    <div class="  form-group ">
+                                      <label for="signupInputEmail">Email address</label>
+                                      <input type="email" class=" form-control" id="signupInputEmail" aria-describedby="emailHelp" required>
+
+                                      <div class="invalid-feedback">
+                                        Incorrect Email format
+                                    </div>
+                                  <div class="valid-feedback">
+                                      Correct Email format
+                                  </div>
+                                    </div>
+                                    <div class=" form-group">
+                                      <label for="signupInputNumber">Mobile Number</label>
+                                      <input type="text" class="form-control " id="signupInputNumber" required>
+                                      <div class="invalid-feedback">Invalid Mobile number
+                                    </div>
+                                  <div class="valid-feedback">valid Mobile number
+                                  </div>
+                                    </div>
+                                    <div class=" form-group">
+                                      <label for="signupInputPassword">Password</label>
+                                      <input type="password" class="form-control " id="signupInputPassword">
+                                      <div class="invalid-feedback">At least 10 characters,One Capital Letter ,One Small Letter,One Special Character
+
+                                    </div>
+                                  <div class="valid-feedback">Valid Password
+                                  </div>
+                                    </div>
+                                    <div class=" form-group">
+                                      <label for="signupInputConfirmPassword">Confirm Password</label>
+                                      <input type="password" class="form-control " id="signupInputConfirmPassword" required>
+                                      <div class="invalid-feedback"> Password is not matched
+                                    </div>
+                                  <div class="valid-feedback"> Password is matched
+                                  </div>
+                                    </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Create Account</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+
+
+
+
+
+
+<!-- carousalstart -->
+          <div id="carouselId" class="carousel slide" data-ride="carousel ">
+              <!-- the main inner part of the carousel -->
+              <div class="carousel-inner ">
+                  <div class="carousel-item active" data-interval="3000">
+                      <img src="images/banner_1.jpg" class="d-block  w-100 "style="height:350px" alt="Project 1">
+                  </div>
+                <div class="carousel-item"  data-interval="3000">
+                    <img src="images/nc1.jpg" class="d-block w-100"style="height:350px" alt="Project 2">
+                </div>
+                <div class="carousel-item"  data-interval="3000">
+                    <img src="images/banner_2.jpg" class="d-block w-100" style="height:350px" alt="Project 3">
+                </div>
+                <div class="carousel-item"  data-interval="3000">
+                    <img src="images/banner_3.png" class="d-block w-100" style="height:350px" alt="Project 4">
+                </div>
+            </div>
+
+              <!-- adding indicators for each slide -->
+              <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+                <li data-target="#carouselId" data-slide-to="3"></li>
+              </ol>
+
+              <!-- adding left-right move buttons -->
+              <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+           </div>
+           <!-- carousalend -->
+
+           <!-- exclusive deal and discount -->
+           <div class=" border-0 mb-5 mt-5 mr-2"><h2 class="text-left text-DARK font-weight-bold text-center"> EXCLUSIVE DEAL AND DISCOUNT </h2></div>
+
+           <div class="row">
+             <div class="col">
+             </div>
+             <div class="col-sm-5 mr-4  ">
+                <img src="images/exclusive1.jpg" alt="exclusivephoto1" style="height:285px;width:560px">
+             </div>
+             <div class="col-sm-5">
+                 <img src="images/ex2.jpg"alt="exclusivephoto1" >
+             </div>
+             <div class="col">
+
+             </div>
+           </div>
+
+
+
+
+       <!-- deck of cards heading -->
+
+      <div class=" border-0 mb-5 mt-5"><h1 class="text-left text-DARK font-weight-bold text-center"> NEW ARRIVAL</h1></div>
+
+      <!-- deck of cards -->
+
+     <div class=" row card-deck ">
+
+       <div class="col-xl-2 col-md-4 col-sm-6 mb-2">
+      <div class="card shadow"style="height:350px;width:200px">
+            <img src="images/PANCH.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+          <div class="card-body">
+              <h6 class="card-title text-center">Panch Phoron</h6>
+                <p class="card-text font-weight-bold text-center text-primary ">95 BDT</p>
+          </div><br>
+            <div class="row">
+              <div class="col-4 ml-3 mb-3">
+
+                    <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#panch">
+                      Details
+                      </button>
+
+              <!-- Modal -->
+                <div class="modal fade" id="panch" tabindex="-1" role="dialog" aria-labelledby="panchLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content mr-50"style="height:450px;width:700px" >
+                      <div class="modal-header bg-info">
+                        <h5 class="modal-title text-light font-weight-bold" id="panchLabel">PRODUCT DETAILS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body ">
+                          <div class="row">
+                            <div class="col-5">
+                              <img src="images/PANCH.jpg" class="ml-5 mt-3"style="height:175px;width:100px"alt="...">
+                            </div>
+                            <div class="col-7">
+                              <h3 class="text-success" style="font-family: Arial, Helvetica, sans-serif">Panch Phoron Powder</h3>
+                              <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery cooking new-arrival </h6>
+                              <h5 class="text-secondary ">Measurement : 100 Gram </h5>
+                              <h5 class="text-secondary "> Price : 95 BDT</h5>
+                              <!-- buynow and quantity -->
+                                 <form>
+                                    <div class="form-group row">
+                                      <label for="qtyText" class="ml-3 text-secondary"><h5>QTY :</h5></label>
+                                      <div class="col-3 " >
+                                        <input type="text"  class="form-control" onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                 </form>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="">
+                          <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- modalend -->
+            </div>
+            <div class="col-6 ml-2">
+              <button type="button" class="btn btn-outline-success" id="#cartpanch">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+              </button>
+            </div>
+
+          </div>
+       </div>
+      </div>
+      <!-- firstdeckend -->
+
+      <div class="col-xl-2  col-md-4 col-sm-6 mb-2">
+      <div class="card shadow"style="height:350px;width:200px">
+        <img src="images/mango.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+        <div class="card-body">
+          <h6 class="card-title text-center">Mango Pickle  </h6>
+           <p class="card-text font-weight-bold text-center text-primary ">190 BDT</p>
+         </div><br>
+           <div class="row">
+           <div class="col-4 ml-3 mb-3">
+
+             <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#mangopickel">
+               Details
+               </button>
+
+             <!-- Modal -->
+               <div class="modal fade" id="mangopickel" tabindex="-1" role="dialog" aria-labelledby="mangoLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                   <div class="modal-content mr-50"style="height:450px;width:700px" >
+                     <div class="modal-header bg-info">
+                       <h5 class="modal-title text-light font-weight-bold" id="mangoLabel">PRODUCT DETAILS</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     <div class="modal-body ">
+                         <div class="row">
+                           <div class="col-5">
+                             <img src="images/mango.jpg" class="ml-5 mt-3"style="height:175px;width:100px"alt="...">
+                           </div>
+                           <div class="col-7">
+                             <h3 class="text-success" style="font-family: Arial, Helvetica, sans-serif">Mango Pickle</h3>
+                             <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery pickles new-arrival </h6>
+                             <h5 class="text-secondary ">Measurement: 400 Gram </h5>
+                             <h5 class="text-secondary"> Price: 190 BDT</h5>
+                             <!-- buynow and quantity -->
+                                <form>
+                                   <div class="form-group row">
+                                     <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                     <div class="col-3 " >
+                                       <input type="text"  class="form-control" onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                     </div>
+                                   </div>
+                                   <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                </form>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="">
+                         <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <!-- modalend -->
+           </div>
+           <div class="col-6 ml-2">
+             <button type="button" class="btn btn-outline-success" id="#cartmangopickel">
+               <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+             </button>
+           </div>
+
+         </div>
+      </div>
+     </div>
+     <!-- 2deckend -->
+
+     <div class="col-xl-2  col-md-4 col-sm-6 mb-2">
+     <div class="card shadow"style="height:350px;width:200px">
+       <img src="images/boroi.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+       <div class="card-body">
+         <h6 class="card-title text-center">Boroi Pickle </h6>
+          <p class="card-text font-weight-bold text-center text-primary ">360 BDT</p>
+        </div><br>
+          <div class="row">
+          <div class="col-4 ml-3 mb-3">
+
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#boroipickel">
+              Details
+              </button>
+
+            <!-- Modal -->
+              <div class="modal fade" id="boroipickel" tabindex="-1" role="dialog" aria-labelledby="mangoLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content mr-50"style="height:450px;width:700px" >
+                    <div class="modal-header bg-info">
+                      <h5 class="modal-title text-light font-weight-bold" id="mangoLabel">PRODUCT DETAILS</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="row">
+                          <div class="col-5">
+                            <img src="images/boroi.jpg" class="ml-5 mt-3"style="height:175px;width:100px"alt="...">
+                          </div>
+                          <div class="col-7">
+                            <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Boroi Pickle</h3>
+                            <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery pickles new-arrival  </h6>
+                            <h5 class="text-secondary ">Measurement: 400 Gram </h5>
+                            <h5 class="text-secondary"> Price: 360 BDT</h5>
+                            <!-- buynow and quantity -->
+                               <form>
+                                  <div class="form-group row">
+                                    <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                    <div class="col-3 " >
+                                      <input type="text"  class="form-control" onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                    </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                               </form>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modalend -->
+          </div>
+          <div class="col-6 ml-2">
+            <button type="button" class="btn btn-outline-success" id="#cartboroipickel">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+            </button>
+          </div>
+
+        </div>
+     </div>
+    </div>
+    <!-- 3deckend -->
+
+         <div class="col-xl-2  col-md-4 col-sm-6 mb-2 ">
+         <div class="card shadow"style="height:350px;width:200px">
+           <img src="images/pineapple.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+           <div class="card-body">
+             <h6 class="card-title text-center">Pineapple Jam</h6>
+              <p class="card-text font-weight-bold text-center text-primary ">350 BDT</p>
+            </div><br>
+              <div class="row">
+              <div class="col-4 ml-3 mb-3">
+
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#pineappleJam">
+                  Details
+                  </button>
+
+                <!-- Modal -->
+                  <div class="modal fade" id="pineappleJam" tabindex="-1" role="dialog" aria-labelledby="mangoLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content mr-50"style="height:450px;width:700px" >
+                        <div class="modal-header bg-info">
+                          <h5 class="modal-title text-light font-weight-bold" id="mangoLabel">PRODUCT DETAILS</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row">
+                              <div class="col-5">
+                                <img src="images/pineapple.jpg" class="ml-5 mt-3"style="height:175px;width:120px"alt="...">
+                              </div>
+                              <div class="col-7">
+                                <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Pineapple Jam</h3>
+                                <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery snacks new-arrival  </h6>
+                                <h5 class="text-secondary ">Measurement: 400 Gram </h5>
+                                <h5 class="text-secondary"> Price: 350 BDT</h5>
+                                <!-- buynow and quantity -->
+                                   <form>
+                                      <div class="form-group row">
+                                        <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                        <div class="col-3 " >
+                                          <input type="text"  class="form-control" onkeypress="return isNumberKey(event)"id="qtyText" style="height:30px"value="">
+                                        </div>
+                                      </div>
+                                      <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                   </form>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modalend -->
+              </div>
+              <div class="col-6 ml-2">
+                <button type="button" class="btn btn-outline-success" id="#cartpineapple">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                </button>
+              </div>
+
+            </div>
+         </div>
+        </div>
+
+        <!-- 4deckend -->
+
+
+
+        <div class="col-xl-2  col-md-4 col-sm-6 mb-2">
+        <div class="card shadow"style="height:350px;width:200px">
+          <img src="images/deshipolao.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+          <div class="card-body">
+            <h6 class="card-title text-center">Deshi Polao Rice</h6>
+             <p class="card-text font-weight-bold text-center text-primary ">120 BDT</p>
+           </div><br>
+             <div class="row">
+             <div class="col-4 ml-3 mb-3">
+
+               <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#deshipolao">
+                 Details
+                 </button>
+
+               <!-- Modal -->
+                 <div class="modal fade" id="deshipolao" tabindex="-1" role="dialog" aria-labelledby="dpolaoLabel" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content mr-50"style="height:450px;width:700px" >
+                       <div class="modal-header bg-info">
+                         <h5 class="modal-title text-light font-weight-bold" id="dpolaoLabel">PRODUCT DETAILS</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       <div class="modal-body ">
+                           <div class="row">
+                             <div class="col-5">
+                               <img src="images/deshipolao.jpg" class="ml-5 mt-3"style="height:175px;width:120px"alt="...">
+                             </div>
+                             <div class="col-7">
+                               <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Deshi Polao Rice</h3>
+                               <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery rice new-arrival  </h6>
+                               <h5 class="text-secondary ">Measurement: 1 kg </h5>
+                               <h5 class="text-secondary"> Price: 120 BDT</h5>
+                               <!-- buynow and quantity -->
+                                  <form>
+                                     <div class="form-group row">
+                                       <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                       <div class="col-3 " >
+                                         <input type="text"  class="form-control" onkeypress="return isNumberKey(event)"id="qtyText" style="height:30px"value="">
+                                       </div>
+                                     </div>
+                                     <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                  </form>
+                             </div>
+                           </div>
+                       </div>
+                       <div class="">
+                           <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- modalend -->
+             </div>
+             <div class="col-6 ml-2">
+               <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#cartdeshipolao">
+                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+               </button>
+             </div>
+
+           </div>
+        </div>
+       </div>
+
+       <!-- 5thdeckend -->
+
+       <div class="col-xl-2   col-md-4 col-sm-6 mb-2">
+       <div class="card shadow"style="height:350px;width:200px">
+         <img src="images/chikenkalabuna.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+         <div class="card-body">
+           <h6 class="card-title text-center">Chicken Kalabhuna</h6>
+            <p class="card-text font-weight-bold text-center text-primary ">225 BDT</p>
+          </div><br>
+            <div class="row">
+            <div class="col-4 ml-3 mb-3">
+
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#ckalabuna">
+                Details
+                </button>
+
+              <!-- Modal -->
+                <div class="modal fade" id="ckalabuna" tabindex="-1" role="dialog" aria-labelledby="ckalabunaLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content mr-50"style="height:450px;width:700px" >
+                      <div class="modal-header bg-info">
+                        <h5 class="modal-title text-light font-weight-bold" id="ckalabunaLabel">PRODUCT DETAILS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body ">
+                          <div class="row">
+                            <div class="col-5">
+                              <img src="images/chikenkalabuna.jpg" class="ml-5 mt-3"style="height:175px;width:120px"alt="...">
+                            </div>
+                            <div class="col-7">
+                              <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Chicken Kalabhuna</h3>
+                              <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category: new-arrival grocery cooking </h6>
+                              <h5 class="text-secondary ">Measurement: 100 Gram </h5>
+                              <h5 class="text-secondary"> Price: 225 BDT</h5>
+                              <!-- buynow and quantity -->
+                                 <form>
+                                    <div class="form-group row">
+                                      <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                      <div class="col-3 " >
+                                        <input type="text"  class="form-control"onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                 </form>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="">
+                          <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- modalend -->
+            </div>
+            <div class="col-6 ml-2">
+              <button type="button" class="btn btn-outline-success" id="#cartchikenkalabuna">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+              </button>
+            </div>
+
+          </div>
+       </div>
+      </div>
+        </div>
+
+        <!-- 6deckend -->
+
+
+
+
+
+
+               <!-- deck of cards heading -->
+
+              <div class=" border-0 mb-5 mt-5"><h1 class="text-left text-DARK font-weight-bold text-center"> POPULAR PRODUCT</h1></div>
+
+              <!-- deck of cards -->
+
+             <div class=" row card-deck ">
+
+               <div class="col-xl-2 col-md-4 col-sm-6 mb-2">
+               <div class="card shadow"style="height:350px;width:200px">
+                 <img src="images/REDSUGER.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+                 <div class="card-body">
+                   <h6 class="card-title text-center">Red (Brown) Sugar</h6>
+                    <p class="card-text font-weight-bold text-center text-primary ">75 BDT</p>
+                  </div><br>
+                    <div class="row">
+                    <div class="col-4 ml-3 mb-3">
+
+                      <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#redsuger">
+                        Details
+                        </button>
+
+                      <!-- Modal -->
+                        <div class="modal fade" id="redsuger" tabindex="-1" role="dialog" aria-labelledby="redsugerLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content mr-50"style="height:450px;width:700px" >
+                              <div class="modal-header bg-success">
+                                <h5 class="modal-title text-light font-weight-bold" id="redsugerLabel">PRODUCT DETAILS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body ">
+
+                                  <div class="row">
+                                    <div class="col-5">
+                                      <img src="images/REDSUGER.jpg" class="ml-5 mt-3"style="height:175px;width:120px"alt="...">
+                                    </div>
+                                    <div class="col-7">
+                                      <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Red (Brown) Sugar</h3>
+                                      <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery cooking </h6>
+                                      <h5 class="text-secondary ">Measurement : 1 Kg</h5>
+                                      <h5 class="text-secondary "> Price : 75 BDT</h5>
+                                      <!-- buynow and quantity -->
+                                         <form>
+                                            <div class="form-group row">
+                                              <label for="qtyText" class="ml-3 text-secondary"><h5>QTY :</h5></label>
+                                              <div class="col-3 " >
+                                                <input type="text"  class="form-control" onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                         </form>
+
+                                    </div>
+                                  </div>
+
+                              </div>
+                              <div class="">
+                                  <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- modalend -->
+                    </div>
+                    <div class="col-6 ml-2">
+                      <button type="button" class="btn btn-outline-success" id="#cartredsuger">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                      </button>
+                    </div>
+
+                  </div>
+               </div>
+              </div>
+              <!-- firstdeckend -->
+
+              <div class="col-xl-2 col-md-4 col-sm-6 mb-2 ">
+              <div class="card shadow"style="height:350px;width:200px">
+                <img src="images/brownata.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Brown Atta </h6>
+                   <p class="card-text font-weight-bold text-center text-primary ">55BDT</p>
+                 </div><br>
+                   <div class="row">
+                   <div class="col-4 ml-3 mb-3">
+
+                     <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#brownata">
+                       Details
+                       </button>
+
+                     <!-- Modal -->
+                       <div class="modal fade" id="brownata" tabindex="-1" role="dialog" aria-labelledby="brownataLabel" aria-hidden="true">
+                         <div class="modal-dialog" role="document">
+                           <div class="modal-content mr-50"style="height:450px;width:700px" >
+                             <div class="modal-header bg-success">
+                               <h5 class="modal-title text-light font-weight-bold" id="brownataLabel">PRODUCT DETAILS</h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                               </button>
+                             </div>
+                             <div class="modal-body ">
+                                 <div class="row">
+                                   <div class="col-5">
+                                     <img src="images/brownata.jpg" class="ml-5 mt-3"style="height:175px;width:120px"alt="...">
+                                   </div>
+                                   <div class="col-7">
+                                     <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Brown Atta</h3>
+                                     <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery cooking </h6>
+                                     <h5 class="text-secondary ">Measurement : 1 Kg </h5>
+                                     <h5 class="text-secondary"> Price : 55 BDT</h5>
+                                     <!-- buynow and quantity -->
+                                        <form>
+                                           <div class="form-group row">
+                                             <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                             <div class="col-3 " >
+                                               <input type="text"  class="form-control" onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                             </div>
+                                           </div>
+                                           <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                        </form>
+                                   </div>
+                                 </div>
+                             </div>
+                             <div class="">
+                                 <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- modalend -->
+                   </div>
+                   <div class="col-6 ml-2">
+                     <button type="button" class="btn btn-outline-success" id="#cartbrownata">
+                       <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                     </button>
+                   </div>
+
+                 </div>
+              </div>
+             </div>
+             <!-- 2deckend -->
+
+             <div class="col-xl-2 col-md-4 col-sm-6 mb-2">
+             <div class="card shadow"style="height:350px;width:200px">
+               <img src="images/HONEY.jpg" class="card-img-top ml-5 mt-2 "style="height:175px;width:120px"alt="...">
+               <div class="card-body">
+                 <h6 class="card-title text-center">Sundarban Natural Honey </h6>
+                  <p class="card-text font-weight-bold text-center text-primary ">600 BDT</p>
+                </div><br>
+                  <div class="row">
+                  <div class="col-4 ml-3 mb-3">
+
+                    <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#honey">
+                      Details
+                      </button>
+
+                    <!-- Modal -->
+                      <div class="modal fade" id="honey" tabindex="-1" role="dialog" aria-labelledby="honeyLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content mr-50"style="height:450px;width:700px" >
+                            <div class="modal-header bg-success">
+                              <h5 class="modal-title text-light font-weight-bold" id="honeyLabel">PRODUCT DETAILS</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row">
+                                  <div class="col-5">
+                                    <img src="images/HONEY.jpg" class="ml-5 mt-3"style="height:175px;width:120px"alt="...">
+                                  </div>
+                                  <div class="col-7">
+                                    <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Sundarban Natural Honey</h3>
+                                    <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : honey new-arrival   </h6>
+                                    <h5 class="text-secondary ">Measurement: 500 Gram </h5>
+                                    <h5 class="text-secondary"> Price: 600 BDT</h5>
+                                    <!-- buynow and quantity -->
+                                       <form>
+                                          <div class="form-group row">
+                                            <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                            <div class="col-3 " >
+                                              <input type="text"  class="form-control" onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                            </div>
+                                          </div>
+                                          <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                       </form>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modalend -->
+                  </div>
+                  <div class="col-6 ml-2">
+                    <button type="button" class="btn btn-outline-success" id="#carthoney">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                    </button>
+                  </div>
+
+                </div>
+             </div>
+            </div>
+            <!-- 3deckend -->
+
+                 <div class="col-xl-2 col-md-4 col-sm-6 mb-2">
+                 <div class="card shadow"style="height:350px;width:200px">
+                   <img src="images/vergincoconut.jpg" class="card-img-top ml-5 mt-2 "style="height:200px;width:100px"alt="...">
+                   <div class="card-body">
+                     <h6 class="card-title text-center">Virgin Coconut Oil</h6>
+                      <p class="card-text font-weight-bold text-center text-primary ">240 BDT</p>
+                    </div><br>
+                      <div class="row">
+                      <div class="col-4 ml-3 mb-3">
+
+                        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#vergincoconut">
+                          Details
+                          </button>
+
+                        <!-- Modal -->
+                          <div class="modal fade" id="vergincoconut" tabindex="-1" role="dialog" aria-labelledby="vergincoconutoLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content mr-50"style="height:450px;width:700px" >
+                                <div class="modal-header bg-success">
+                                  <h5 class="modal-title text-light font-weight-bold" id="vergincoconut">PRODUCT DETAILS</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body ">
+                                    <div class="row">
+                                      <div class="col-5">
+                                        <img src="images/vergincoconut.jpg" class="ml-5 mt-3"style="height:230px;width:100px"alt="...">
+                                      </div>
+                                      <div class="col-7">
+                                        <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Virgin Coconut Oil</h3>
+                                        <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery cooking   </h6>
+                                        <h5 class="text-secondary ">Measurement: 200 ml </h5>
+                                        <h5 class="text-secondary"> Price: 240 BDT</h5>
+                                        <!-- buynow and quantity -->
+                                           <form>
+                                              <div class="form-group row">
+                                                <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                                <div class="col-3 " >
+                                                  <input type="text"  class="form-control"onkeypress="return isNumberKey(event)"  id="qtyText" style="height:30px"value="">
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                           </form>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- modalend -->
+                      </div>
+                      <div class="col-6 ml-2">
+                        <button type="button" class="btn btn-outline-success" id="#cartvergincoconut">
+                          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                        </button>
+                      </div>
+
+                    </div>
+                 </div>
+                </div>
+
+                <!-- 4deckend -->
+
+
+
+                <div class="col-xl-2 col-md-4 col-sm-6 mb-2">
+                <div class="card shadow"style="height:350px;width:200px">
+                  <img src="images/mustardoil.jpg" class="card-img-top ml-5 mt-2 "style="height:200px;width:90px"alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Mustard Oil</h6>
+                     <p class="card-text font-weight-bold text-center text-primary ">220 BDT</p>
+                   </div><br>
+                     <div class="row">
+                     <div class="col-4 ml-3 mb-3">
+
+                       <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#mustardoil">
+                         Details
+                         </button>
+
+                       <!-- Modal -->
+                         <div class="modal fade" id="mustardoil" tabindex="-1" role="dialog" aria-labelledby="mustardoilLabel" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                             <div class="modal-content mr-50"style="height:450px;width:700px" >
+                               <div class="modal-header bg-success">
+                                 <h5 class="modal-title text-light font-weight-bold" id="mustardoilLabel">PRODUCT DETAILS</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                                 </button>
+                               </div>
+                               <div class="modal-body ">
+                                   <div class="row">
+                                     <div class="col-5">
+                                       <img src="images/mustardoil.jpg" class="ml-5 mt-3"style="height:230px;width:100px"alt="...">
+                                     </div>
+                                     <div class="col-7">
+                                       <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Mustard Oil</h3>
+                                       <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : grocery cooking monthly-bazaar </h6>
+                                       <h5 class="text-secondary ">Measurement: 1 litre </h5>
+                                       <h5 class="text-secondary"> Price: 220 BDT</h5>
+                                       <!-- buynow and quantity -->
+                                          <form>
+                                             <div class="form-group row">
+                                               <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                               <div class="col-3 " >
+                                                 <input type="text"  class="form-control"onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                               </div>
+                                             </div>
+                                             <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                          </form>
+                                     </div>
+                                   </div>
+                               </div>
+                               <div class="">
+                                   <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <!-- modalend -->
+                     </div>
+                     <div class="col-6 ml-2">
+                       <button type="button" class="btn btn-outline-success" id="#cartdMustardOil">
+                         <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                       </button>
+                     </div>
+
+                   </div>
+                </div>
+               </div>
+
+               <!-- 5thdeckend -->
+
+               <div class="col-xl-2 col-md-4 col-sm-6 mb-2">
+               <div class="card shadow"style="height:350px;width:200px">
+                 <img src="images/mariyumdates.jpg" class="card-img-top ml-5 mt-2 "style="height:150px;width:140px"alt="...">
+                 <div class="card-body">
+                   <h6 class="card-title text-center">Mariyum Dates</h6>
+                    <p class="card-text font-weight-bold text-center text-primary ">550 BDT</p>
+                  </div><br>
+                    <div class="row">
+                    <div class="col-4 ml-3 mb-3">
+
+                      <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#mariyumdates">
+                        Details
+                        </button>
+
+                      <!-- Modal -->
+                        <div class="modal fade" id="mariyumdates" tabindex="-1" role="dialog" aria-labelledby="mariyumdatesLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content mr-50"style="height:450px;width:700px" >
+                              <div class="modal-header bg-success">
+                                <h5 class="modal-title text-light font-weight-bold" id="mariyumdatesLabel">PRODUCT DETAILS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body ">
+                                  <div class="row">
+                                    <div class="col-5">
+                                      <img src="images/mariyumdates.jpg" class="ml-5 mt-3"style="height:150px;width:150px"alt="...">
+                                    </div>
+                                    <div class="col-7">
+                                      <h3 class="text-success"style="font-family: Arial, Helvetica, sans-serif">Mariyum Dates</h3>
+                                      <h6 class="text-primary "style="font-family: Arial, Helvetica, sans-serif">Category : fruits snacks  </h6>
+                                      <h5 class="text-secondary ">Measurement: 500 Gram </h5>
+                                      <h5 class="text-secondary"> Price: 550 BDT</h5>
+                                      <!-- buynow and quantity -->
+                                         <form>
+                                            <div class="form-group row">
+                                              <label for="qtyText" class="ml-3"><h5 class="text-secondary">QTY :</h5></label>
+                                              <div class="col-3 " >
+                                                <input type="text"  class="form-control"onkeypress="return isNumberKey(event)" id="qtyText" style="height:30px"value="">
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-danger mb-2">BUY NOW</button>
+                                         </form>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="">
+                                  <img src="images/mb.png"  style="height:125px;width:698px"alt="...">
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- modalend -->
+                    </div>
+                    <div class="col-6 ml-2">
+                      <button type="button" class="btn btn-outline-success" id="#cartmariyumdates">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                      </button>
+                    </div>
+
+                  </div>
+               </div>
+              </div>
+                </div>
+
+                <!-- 6deckend -->
+
+
+                <!-- deck of cards heading -->
+
+               <div class=" border-0 mb-5 mt-5"><h1 class="text-left text-DARK font-weight-bold text-center"> OUR PROMISES</h1></div>
+
+               <div class="row  justify-content-center">
+                 <div class="col-12 col-sm-3 mt-2  ">
+                   <img src="images/promise1.jpg"  alt="pimage 1"style="height:280px;width:390px">
+
+                 </div>
+                 <div class="col-12 col-sm-3 mt-2 ml-5 ">
+                   <img src="images/promise2.jpg"  alt="pimage 2"style="height:280px;width:390px">
+
+                 </div>
+                 <div class="col-12 col-sm-3 mt-2 ml-5">
+                   <img src="images/promise3.jpg" alt="Pimage 1" style="height:280px;width:390px">
+
+                 </div>
+
+               </div>
+
+
+
+
+
+
+
+
+               <div class=" border-0 mb-5 mt-5"><h1 class="text-left text-DARK font-weight-bold text-center">PRODUCT CATAGORIES</h1></div>
+
+
+               <div class=" row card-deck  justify-content-center mb-5 ">
+                 <div class="col-12 col-lg-4 col-md-6 mt-5">
+                 <div class="card shadow">
+                   <img src="images/catagory1.jpg" class="card-img-top"alt="...">
+                   <div class="card-body">
+                     <h2 class="card-title text-center">GROCERY</h2>
+                    </div><br>
+                 </div>
+                </div>
+                <div class="col-12  col-lg-4 col-md-6 mt-5">
+                <div class="card shadow">
+                  <img src="images/catagory2.jpg" class="card-img-top"alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title text-center">FOOD FOR HEATH</h2>
+                   </div><br>
+                </div>
+               </div>
+               <div class="col-12 col-lg-4 col-md-6 mt-5">
+               <div class="card shadow">
+                 <img src="images/catagory3.jpg" class="card-img-top"alt="...">
+                 <div class="card-body">
+                   <h2 class="card-title text-center">PICKELS</h2>
+                  </div><br>
+               </div>
+              </div>
+              <div class="col-12 col-lg-4 col-md-6 mt-5">
+              <div class="card shadow">
+                <img src="images/catagory4.jpg" class="card-img-top"alt="...">
+                <div class="card-body">
+                  <h2 class="card-title text-center">HONEY</h2>
+                 </div><br>
+              </div>
+             </div>
+             <div class="col-12 col-lg-4 col-md-6 mt-5 ">
+             <div class="card shadow">
+               <img src="images/catagory5.jpg" class="card-img-top"alt="...">
+               <div class="card-body">
+                 <h2 class="card-title text-center">FRUITS</h2>
+                </div><br>
+             </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mt-5 ">
+            <div class="card shadow">
+              <img src="images/catagory6.jpg" class="card-img-top"alt="...">
+              <div class="card-body">
+                <h2 class="card-title text-center">DRY FISH</h2>
+               </div><br>
+            </div>
+           </div>
+        </div>
+
+        <!-- ENDCATAGORY -->
+
+        <!-- jumborton -->
+
+                <div class="jumbotron   img-jmbo mt-5" style="height:350px">
+                  <div class="container">
+                        <h1 class="display-4 text-center text-light  font-weight-bold">Huge Product Collection</h1>
+                        <p class="lead text-center text-light font-weight-bold">One marketplace to buy products</p>
+                      </div>
+                  </div>
+
+
+                  <!-- what our client says -->
+                <div class="row">
+                  <div class="col-2">
+
+                  </div>
+                  <div class="col-8">
+                    <div class=" border-0 mb-5 mt-5"><h1 class="text-center text-DARK  text-center"> "WHAT OUR CLIENT SAY"</h1></div>
+
+                    <div id="carouselId1" class="carousel slide " data-ride="carousel " >
+                        <!-- the main inner part of the carousel -->
+                        <div class="carousel-inner ">
+
+                          <div class="carousel-item active" data-interval="3000">
+                            <blockquote class= "shadow p-4 mb-5 bg-white" style="height:300px">
+                              <p class="text-left">Just received some dry fish from Khaas food last night. And found it Awesome today after cooking n eating. Very much impressed with your food quality. Just Love it. Keep it up. Good wishes for  Food </p>
+                              <div class="text-left">
+                                <a class="text-muted"<small>-mr.khan</small></a>
+                               </div>
+                              </blockquote>
+                          </div>
+                          <div class="carousel-item"  data-interval="3000">
+                            <blockquote class= "shadow p-4 mb-5 bg-white" style="height:300px">
+                              <p class="text-left"><span id="spantext">&#8220;</span>আল'হামদুলিল্লাহ। আমি এবং আমার পরিবার ১০০ ভাগ মুগ্ধ।  প্রায় ৮/৯ ধরণের প্রোডাক্ট ব্যবহার করে আসছি গত ৬ মাসের বেশী সময়। </p>
+                              <div class="text-left">
+                                <a class="text-muted"<small>-mr.Farhan</small></a>
+                               </div>
+                              </blockquote>
+
+                          </div>
+                          <div class="carousel-item"  data-interval="3000">
+                            <blockquote class= "shadow p-4 mb-5 bg-white" style="height:300px">
+                              <p class="text-left"><span>&#8220;</span>I ordered the "combo pack" from khaas food a few days back. I wanted to make review after actually using their products. After using them I have come to the conclusion that every item of that pack is the best item of the market! Thus it can safely be said..</p>
+                              <div class="text-left">
+                                <a class="text-muted"<small>-mr sakib</small></a>
+                               </div>
+                              </blockquote>
+                            </div>
+                            <div class="carousel-item"  data-interval="3000">
+                              <blockquote class= "shadow p-4 mb-5 bg-white" style="height:300px">
+                                <p class="text-left"><span>&#8220;</span>আলহামদুলিল্লাহ, অসাধারন একটি উদ্যোগের জন্য। এপর্যন্ত ৪বার করে "সুন্দরবন আর কালোজিরা" মধু অর্ডার করলাম।  </p>
+                                <div class="text-left">
+                                  <a class="text-muted"<small>-mr sakib</small></a>
+                                 </div>
+                                </blockquote>
+                              </div>
+
+                        </div>
+
+                        <!-- adding indicators for each slide -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselId1" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselId1" data-slide-to="1"></li>
+                          <li data-target="#carouselId1" data-slide-to="2"></li>
+                          <li data-target="#carouselId1" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- adding left-right move buttons -->
+                        <a class="carousel-control-prev" href="#carouselId1" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselId1" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                     </div>
+
+                  </div>
+                  <div class="col-2">
+
+                  </div>
+
+                </div>
+
+
+
+
+<!-- footer -->
+
+         <footer >
+             <div class="row bg-success"  style="height:300px">
+                <div class="col col-lg-3 col-md-6 mt-4 pl-4 ">
+                    <h6 class="text-light font-weight-bold">INFORMATION</h6>
+                    <a href="#" class="text-light">Home</a><br>
+                    <a href="#" class="text-light">About us</a><br>
+                    <a href="#" class="text-light">Service</a><br>
+                    <a href="#" class="text-light">Reviews</a>
+                </div>
+
+              <div class="col col-lg-3 col-md-6 mt-4 ">
+                  <h6 class="text-light font-weight-bold">CUSTOMER SERVICE</h6>
+                  <a href="#" class="text-light">Security Policy</a><br>
+                  <a href="#" class="text-light">Shipping & Replacement</a><br>
+                  <a href="#" class="text-light">Privacy Policy</a><br>
+                  <a href="#" class="text-light">Terms of Use</a>
+            </div>
+
+            <div class="col col-lg-3 col-md-6 mt-4 ">
+                <h6 class="text-light font-weight-bold">MY ACCOUNT</h6>
+                  <a href="#" class="text-light">Addresses</a> <br>
+                    <a href="#" class="text-light">Orders</a> <br>
+                    <a href="#" class="text-light">Shopping cart</a>
+                  <a href="#" class="text-light">Wishlist</a>
+                <a href="#" class="text-light">Compare products list</a>
+              </div>
+
+              <div class="col col-lg-3 col-md-6 mt-4">
+                <h6 class="text-light font-weight-bold">CONTACT US</h6>
+                  <a href="#" class="text-light"><i class="fa fa-map-marker-alt"aria-hidden="true"></i>39, North Road, Vuter Goli, Near Jame Masjid, Dhanmondi, Dhaka 1205</a>
+                  <a href="#" class="text-light">support@priyoshop.com</a><br>
+                  <a href="#" class="text-light">098754889</a><br>
+                  </div>
+               </div>
+
+
+          <div class="row   bg-lght" style="width:1394px;background-color:#1E8449 ">
+            <div class="col" >
+
+               <p class="text-center text-light "><small >©2020 MIT License, All rights reserved.</p></small>
+             </div>
+                </div>
+       </footer>
+
+<!-- javascript code start fom here -->
+<!-- Regsiter email -->
+       <script type="text/javascript">
+            var regEmail=document.getElementById('signupInputEmail');
+             regEmail.addEventListener('keyup', mailvalidate);
+
+             function mailvalidate(){
+  		            var regEmailValue=regEmail.value;
+                  var validformat=/^([a-zA-Z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z.]{2,6})$/;
+
+
+
+               if(validformat.test(regEmailValue)){
+                    regEmail.classList.add('is-valid');
+                    regEmail.classList.remove('is-invalid');
+                 }
+                 else{
+                    regEmail.classList.add('is-invalid');
+                    regEmail.classList.remove('is-valid');
+                 }
+
+             }
+          </script>
+
+<!-- number -->
+          <script type="text/javascript">
+               var regNumber=document.getElementById('signupInputNumber');
+                  regNumber.addEventListener('keyup', numbervalidate);
+
+                function numbervalidate(){
+     		            var regNumberValue=regNumber.value;
+                     var validNumformat=/^(01[56789])(\d{8})$/;
+
+
+
+                  if(validNumformat.test(regNumberValue)){
+                       regNumber.classList.add('is-valid');
+                        regNumber.classList.remove('is-invalid');
+                    }
+                    else{
+                       regNumber.classList.add('is-invalid');
+                       regNumber.classList.remove('is-valid');
+                    }
+                }
+               </script>
+
+               <!-- password -->
+            <script>
+              var passelm=document.getElementById('signupInputPassword');
+              passelm.addEventListener('keyup',passvalidate);
+              function passvalidate(){
+              var plength=/^.{10,}$/;///length checking
+              var pcap=/[A-Z]+/;///capital checking
+              var psmall=/[a-z]+/;///lowercase checking
+              var pspecial=/^.*[^A-Za-z0-9].*$/;///special character checking
+
+              var passinput=document.getElementById('signupInputPassword').value;
+
+              if(plength.test(passinput)&&pcap.test(passinput)&&psmall.test(passinput)&&pspecial.test(passinput)){
+                  passelm.classList.add('is-valid');
+                  passelm.classList.remove('is-invalid');
+              }
+              else{
+                passelm.classList.add('is-invalid');
+                passelm.classList.remove('is-valid');
+              }
+
+          }
+          </script>
+
+          <!-- signupInputConfirmPassword -->
+
+        <!-- confirmpass -->
+
+        <script>
+              var confirmpass=document.getElementById('signupInputConfirmPassword');
+              var password=document.getElementById('signupInputPassword')
+            confirmpass.addEventListener('keyup',passvalidate);
+              function passvalidate(){
+                var confirmpassvalue=confirmpass.value;
+                var passValue=password.value;
+
+
+                if( confirmpassvalue==passValue){
+                   confirmpass.classList.add('is-valid');
+                  confirmpass.classList.remove('is-invalid');
+                }
+                else{
+                 confirmpass.classList.add('is-invalid');
+                confirmpass.classList.remove('is-valid');
+                }
+
+              }
+
+
+
+      </script>
+
+
+        <!-- loginInputEmail1 -->
+
+        <script>
+             var logEmail=document.getElementById('loginInputEmail1');
+             logEmail.addEventListener('keyup', logmailvalidate);
+
+              function logmailvalidate(){
+                   var logEmailValue=logEmail.value;
+                   var validformat=/^([a-zA-Z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z.]{2,6})$/;
+
+
+
+                if(validformat.test(logEmailValue)){
+                     logEmail.classList.add('is-valid');
+                    logEmail.classList.remove('is-invalid');
+                  }
+                  else{
+                  logEmail.classList.add('is-invalid');
+                  logEmail.classList.remove('is-valid');
+                  }
+
+              }
+           </script>
+
+           <!-- loginInputPassword -->
+           <script>
+             var logpasselm=document.getElementById('loginInputPassword');
+             logpasselm.addEventListener('keyup',logpassvalidate);
+             function logpassvalidate(){
+             var plength=/^.{10,}$/;///length checking
+             var pcap=/[A-Z]+/;///capital checking
+             var psmall=/[a-z]+/;///lowercase checking
+             var pspecial=/^.*[^A-Za-z0-9].*$/;///special character checking
+
+             var passinput=document.getElementById('loginInputPassword').value;
+
+             if(plength.test(passinput)&&pcap.test(passinput)&&psmall.test(passinput)&&pspecial.test(passinput)){
+                  logpasselm.classList.add('is-valid');
+                 logpasselm.classList.remove('is-invalid');
+             }
+             else{
+               logpasselm.classList.add('is-invalid');
+                logpasselm.classList.remove('is-valid');
+             }
+
+         }
+         </script>
+
+         <script type="text/javascript">
+         function isNumberKey(evt)
+               {
+                 var charCode = (evt.which) ? evt.which : evt.keyCode;
+                 if (charCode != 46 && charCode > 31
+                 && (charCode < 48 || charCode > 57))
+                 return false;
+                 return true;
+               }
+
+            </script>
+
+
+
+
+
+
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+          </body>
+
+</html>

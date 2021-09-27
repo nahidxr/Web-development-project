@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- fontawesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>AdminPage</title>
+  </head>
+
+<body>
+  <div class="row bg-success  " style="height:25px">
+     <div class="col-4 d-none d-md-block">
+       <a href="#" class="text-light ml-5" style="font-size: 13px" ><i class="fa fa-browser"></i>Trusted Online Shopping Site in Bangladesh</a>
+       </div>
+       <div class="col-4 d-none d-md-block">
+           <a href="#" class="text-light ml-4" style="font-size: 13px" ><i class="fa fa-phone"> </i> 09636102030 (9am to 9pm)</p></a>
+         </div>
+         <div class="col-4 d-none d-md-block">
+         <a href="#" class="text-light ml-5"style="font-size: 13px" ><i class="fa fa-shopping-basket"></i> How to buy</a>
+         <a href="#"class="text-light ml-5" style="font-size: 13px" ><i class="fa fa-buysellads"></i> sell with us</a>
+     </div>
+   </div>
+  <!-- Navigation -->
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 shadow ">
+ <a class="navbar-brand" href="#">
+ <img src="images/index.png" class="d-inline-block align-top text-success" alt="" style="height:65px;width:130px">
+ </a>
+ <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+     <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+   <form class="form-inline ml-5">
+       <div class="input-group">
+           <input type="text" class="form-control" placeholder="Search"style="width: 500px; height: 40px">
+           <div class="input-group-append">
+               <button type="button" class="btn btn-success"><i class="fa fa-search"></i></button>
+           </div>
+       </div>
+   </form>
+     <div class="navbar-nav">
+         <a href="#" class="nav-item nav-link active" style="color:green">Home</a>
+           <a class="nav-link " href="#"  style="color:green">Notification</a>
+
+     </div>
+
+     <div class="navbar-nav">
+         <a href="#" class="nav-item nav-link " data-toggle="modal" data-target="#loginModal"  style="color:green">Signout</a>
+         <!-- Modal -->
+
+ <!-- register -->
+
+     </div>
+ </div>
+ </nav>
+
+  <!-- nave end -->
+
+
+
+  <!-- order -->
+  <!-- table -->
+
+  <div class="row" >
+    <div class="col-2  ml-2 mb-5 border shadow"style="height:600px">
+      <h6><a href="#" class="text-secondary  mt-2"><i class="fa fa-home"></i> DashBoard</a></h6>
+      <h6><a href="#" class="text-secondary  "><i class="fa fa-shopping-cart" aria-hidden="true"></i> ORDERS</a></h6>
+      <h6><a href="#" class="text-info "><i class="fa fa-shopping-cart" aria-hidden="true"></i> PRODUCTS</a></h6>
+      <h6><a href="#" class="text-secondary "><i class="fa fa-shopping-cart" aria-hidden="true"></i> CATAGORIES</a></h6>
+      <h6><a href="#" class="text-secondary "><i class="fa fa-shopping-cart" aria-hidden="true"></i>BRANDS</a></h6>
+        <h6><a href="#" class="text-secondary "><i class="fa fa-users"></i>CUSTOMER</a></h6>
+
+
+    </div>
+    <div class="col">
+      <h2 class=" border-bottom font-weight-bold">Hello, MR.Sakib Khan</h2>
+      <div class="row">
+        <div class="col-10">
+
+        </div>
+        <div class="col-2">
+             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addproductModal">Add Product</button>
+             <div class="modal fade" id="addproductModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content" style="width:600px">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="loginLabel">Add product</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   <div class="modal-body" style="width:600px">
+                       <div class="row " >
+                         <div class="col-3">
+                         </div>
+                         <div class=" col-6 border  border-info shadow" style="width:400px">
+                             <form>
+                               <div class="form-row">
+                                 <div class="form-group col-md-12">
+                                   <label for="pid">Product ID</label>
+                                   <input type="text" class="form-control" id="pid" placeholder="Enter Product ID">
+                                   <div class="invalid-feedback">
+                                     Incorrect Name format
+                                 </div>
+                               <div class="valid-feedback">
+                                   Correct Name format
+                               </div>
+                                 </div>
+                                 <div class="form-group col-md-12">
+                                   <label for="pname"> Product Name</label>
+                                   <input type="text" class="form-control" id="pname" placeholder="Enter Product Name">
+                                   <div class="invalid-feedback">
+                                     Incorrect Name format
+                                 </div>
+                               <div class="valid-feedback">
+                                   Correct Name format
+                               </div>
+                                 </div>
+                                 <div class="form-group col-md-12">
+                                   <label for="pprice">Product Price</label>
+                                   <input type="text" class="form-control"  onkeypress="return isNumberKey(event)" id="pprice" placeholder="Enter Product Price">
+                                   <div class="invalid-feedback">
+                                     Incorrect Name format
+                                 </div>
+                               <div class="valid-feedback">
+                                   Correct Name format
+                               </div>
+                                 </div>
+
+                                 <div class="form-group col-md-12">
+                                   <label for="inputCity">Product CATAGORIES</label>
+                                   <select id="inputCity" class="form-control">
+                                     <option selected>Grocery</option>
+                                     <option>Honey</option>
+                                     <option>Pickles</option>
+                                     <option>Fruits</option>
+                                     <option>Tonic</option>
+                                     <option>Flash Sale</option>
+                                   </select>
+                                   </div>
+
+                                   <!-- inputimage -->
+                                   <div class="form-group mb-5">
+                                     <label><strong>Upload Product Image</strong></label>
+                                     <div class="custom-file">
+                                       <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
+                                       <label class="custom-file-label" for="customFile">Choose file</label>
+                                         <button type="button" name="upload" value="upload" id="upload" class="btn btn-block btn-dark  mt-2"style="width:200px"><i class="fa fa-fw fa-upload"></i> Upload</button>
+                                     </div>
+                                   </div>
+
+                                   <!-- endinputimgae -->
+
+
+                                   </div>
+                                 </form>
+                                 </div>
+                         <div class="col-3">
+                         </div>
+                       </div>
+
+
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Add Product</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <h2 class=" text-success mt-2 ml-5"> PRODUCT LIST</h2>
+        <div class="col-md-11 border  shadow mb-1 ml-5 mt-5 shadow" >
+
+        <table class="table border-bottom" >
+          <thead >
+            <tr>
+              <th scope="col" class="text-secondary ">Image</th>
+              <th scope="col" class="text-secondary">Product Name</th>
+              <th scope="col"class="text-secondary">Price</th>
+              <th scope="col"class="text-secondary ">Quantity</th>
+              <th scope="col"class="text-secondary">Catagory</th>
+              <th scope="col"class="text-secondary">Action</th>
+
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td><img src="images/PANCH.jpg"  alt="" style="height:100px;width:70px"></td>
+                <td > <p class="mt-5">Panch Phoron Powder - 100 Gram</p> </td>
+                <td><p class="mt-5"></p>150 Taka</td>
+                <td><p class="mt-5"></p>5</td>
+                <td><p class="mt-5"></p>grocery</td>
+                <td><button type="button" class="btn btn-outline-light mt-2" style=";width:80px" id="#"><img src="images/remove2.png"  alt="" style="height:25px;width:25px"></button> <br>
+                  <button type="button" class="btn btn-outline-light ml-1" style=";width:80px" id="#" data-toggle="modal" data-target="#updateproductModal"><img src="images/e.png"  alt="" style="height:25px;width:25px"></button>
+                    <!-- updatebtn -->
+                    <div class="modal fade" id="updateproductModal" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="width:600px">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="loginLabel">Update product</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body" style="width:600px">
+
+                            <div class="row " >
+                              <div class="col-3">
+                              </div>
+                              <div class=" col-6 border  border-info shadow" style="width:5px">
+                                  <form>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-12">
+                                        <label for="pid">SEARCH PRODUCT ID</label>
+                                        <input type="text" class="form-control" id="pid" placeholder="Enter Product ID">
+                                        <div class="invalid-feedback">
+                                          Incorrect Name format
+                                      </div>
+                                    <div class="valid-feedback">
+                                        Correct Name format
+                                    </div>
+                                      </div>
+                                      <div class="form-group col-md-12">
+                                        <label for="pname"> Update Product Name</label>
+                                        <input type="text" class="form-control" id="pname" placeholder="Enter Product Name">
+                                        <div class="invalid-feedback">
+                                          Incorrect Name format
+                                      </div>
+                                    <div class="valid-feedback">
+                                        Correct Name format
+                                    </div>
+                                      </div>
+                                      <div class="form-group col-md-12">
+                                        <label for="pprice">Product Price</label>
+                                        <input type="text" class="form-control" id="pprice" placeholder="Enter Product Price">
+                                        <div class="invalid-feedback">
+                                          Incorrect Name format
+                                      </div>
+                                    <div class="valid-feedback">
+                                        Correct Name format
+                                    </div>
+                                      </div>
+
+
+                                        <!-- inputimage -->
+                                        <div class="form-group">
+                                          <label><strong>UPDATE Product Image</strong></label>
+                                          <div class="custom-file">
+                                            <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                            <button type="button" name="upload" value="upload" id="upload" class="btn btn-block btn-dark  mt-2"style="width:200px"><i class="fa fa-fw fa-upload"></i> Upload</button>
+                                        </div>
+                                      </div>
+
+                                      <!-- endinputimgae -->
+                                        </div>
+
+                                      </form>
+                                    </div>
+                              <div class="col-3">
+
+                              </div>
+                            </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-danger">Update Product</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+               </div>
+
+                  <!-- endupdatebtn -->
+                </td>
+            </tr>
+            <tr>
+              <td><img src="images/Honey.jpg"  alt="" style="height:100px;width:70px"></td>
+              <td > <p class="mt-5">Sundorban Honey - 400 Gram</p> </td>
+              <td><p class="mt-5"></p>600 Taka</td>
+              <td><p class="mt-5"></p>15</td>
+            <td><p class="mt-5"></p>Honey</td>
+              <td><button type="button" class="btn btn-outline-light mt-2" style=";width:80px" id="#"><img src="images/remove2.png"  alt="" style="height:25px;width:25px"></button> <br>
+                <button type="button" class="btn btn-outline-light ml-1" style=";width:80px" id="#"><img src="images/e.png"  alt="" style="height:25px;width:25px"></button>
+              </td>
+          </tr>
+              </tbody>
+            </table>
+
+              </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+
+           <footer >
+               <div class="row bg-success"  style="height:300px">
+                  <div class="col col-lg-3 col-md-6 mt-4 pl-4 ">
+                      <h6 class="text-light font-weight-bold">INFORMATION</h6>
+                      <a href="#" class="text-light">Home</a><br>
+                      <a href="#" class="text-light">About us</a><br>
+                      <a href="#" class="text-light">Service</a><br>
+                      <a href="#" class="text-light">Reviews</a>
+                  </div>
+
+                <div class="col col-lg-3 col-md-6 mt-4 ">
+                    <h6 class="text-light font-weight-bold">CUSTOMER SERVICE</h6>
+                    <a href="#" class="text-light">Security Policy</a><br>
+                    <a href="#" class="text-light">Shipping & Replacement</a><br>
+                    <a href="#" class="text-light">Privacy Policy</a><br>
+                    <a href="#" class="text-light">Terms of Use</a>
+              </div>
+
+              <div class="col col-lg-3 col-md-6 mt-4 ">
+                  <h6 class="text-light font-weight-bold">MY ACCOUNT</h6>
+                    <a href="#" class="text-light">Addresses</a> <br>
+                      <a href="#" class="text-light">Orders</a> <br>
+                      <a href="#" class="text-light">Shopping cart</a><br>
+                    <a href="#" class="text-light">Wishlist</a><br>
+                  <a href="#" class="text-light">Compare products list</a>
+                </div>
+
+                <div class="col col-lg-3 col-md-6 mt-4">
+                  <h6 class="text-light font-weight-bold">CONTACT US</h6>
+                    <a href="#" class="text-light"><i class="fa fa-map-marker-alt"aria-hidden="true"></i>39, North Road, Vuter Goli, Near Jame Masjid, Dhanmondi, Dhaka 1205</a>
+                    <a href="#" class="text-light">support@goshop.com</a><br>
+                    <a href="#" class="text-light">098754889</a><br>
+                    </div>
+                 </div>
+
+
+            <div class="row   bg-lght" style="width:1394px;background-color:#1E8449 ">
+              <div class="col" >
+
+                 <p class="text-center text-light ">©2020 MIT License, All rights reserved.</p>
+               </div>
+                  </div>
+       </footer>
+
+
+
+
+
+
+
+        <script type="text/javascript">
+        function isNumberKey(evt)
+              {
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode != 46 && charCode > 31
+                  && (charCode < 48 || charCode > 57))
+                  return false;
+                return true;
+                }
+
+             </script>
+
+           <script type="text/javascript">
+                var uName=document.getElementById('pname');
+                    uName.addEventListener('keyup',  uNamevalidate);
+
+                   function  uNamevalidate(){
+                   var  uNameValue= uName.value;
+                      var validNumformat=/^[a-zA-Z0-9-_.]+$/;
+
+
+
+                   if(validNumformat.test(uNameValue)){
+                       uName.classList.add('is-valid');
+                          uName.classList.remove('is-invalid');
+                       }
+                     else{
+                        uName.classList.add('is-invalid');
+                         uName.classList.remove('is-valid');
+                     }
+                 }
+        </script>
+
+        <script type="text/javascript">
+             var pid=document.getElementById('pid');
+                 pid.addEventListener('keyup',  uNamevalidate);
+
+                function  uNamevalidate(){
+                var   pidValue=  pid.value;
+                   var validNumformat=/^[a-zA-Z0-9-]+$/;
+
+
+
+                if(validNumformat.test( pidValue)){
+                     pid.classList.add('is-valid');
+                        pid.classList.remove('is-invalid');
+                    }
+                  else{
+                      pid.classList.add('is-invalid');
+                       pid.classList.remove('is-valid');
+                  }
+                }
+         </script>
+
+
+
+    <!--Optional JavaScript-->
+    <!--jQuery first,then Popper.js,then Bootstrap JS-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      </body>
+</html>
